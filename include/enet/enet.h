@@ -405,7 +405,7 @@ typedef enum _ENetEventType
        The source address of the packet will be held in host->receivedAddress
        where host is the ENetHost passed passed to enet_host_service().
        The packet field contains the packet that was received; this packet must
-       *NOT* be destroyed with enet_packet_destroy.
+       be destroyed with enet_packet_destroy after use.
      */
     ENET_EVENT_TYPE_RAWPACKET = 4
 
